@@ -17,7 +17,6 @@ class PuppetLint
           end
 
           matched_files.to_a.each do |puppet_file|
-            puts "Evaluating #{puppet_file}"
             linter.file = puppet_file
             linter.run
           end
